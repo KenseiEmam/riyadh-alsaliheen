@@ -5,6 +5,11 @@
     </NuxtLayout>
   </div>
 </template>
+<script setup>
+useHead({
+  title: 'مسجد رياض الصالحين'
+})
+</script>
 <style>
 .page-enter-active,
 .page-leave-active {
