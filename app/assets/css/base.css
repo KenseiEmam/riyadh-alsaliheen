@@ -1,0 +1,104 @@
+/* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&family=Noto+Kufi+Arabic:wght@100..900&family=Poiret+One&family=Staatliches&display=swap');
+@import 'tailwindcss';
+
+/* Define your custom theme tokens */
+@theme {
+  /* Light theme */
+  --color-primary: #FBF6F6; /* was --color-primary */
+  --color-secondary: #bccac4; /* was --color-secondary */
+  --color-teritiary: #6e8a7e; /* was --color-teritiary */
+  --color-primary-text: #FBF6F6; /* was --color-primary-text */
+  --color-secondary-text: #bccac4; /* was --color-secondary-text */
+  --color-primary-background: #091413; /* was --color-primary-background */
+  --color-secondary-background: #285A48; /* was --color-secondary-background */
+  --color-primary-streak: #4a90e2; /* was --color-primary-streak */
+  --color-primary-error: #e74c3c; /* was --color-primary-error */
+  --color-primary-success: #27ae60; /* was --color-primary-success */
+
+
+
+  /* Spacing tokens (unchanged) */
+  --spacing-128: 32rem;
+  --spacing-144: 36rem;
+  --spacing-A4W: 794px;
+  --spacing-A4H: 1123px;
+  --spacing-2page: 2244px;
+  --spacing-75vh: 75vh;
+}
+
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #052c16;
+  --vt-c-white-mute: #f2f2f2;
+  --vt-c-white-secbg: #ecf0dc;
+  --vt-c-black: #FBF6F6;
+  --vt-c-black-soft: #bccac4;
+  --vt-c-black-mute: #6e8a7e;
+
+  --vt-c-indigo: ##2ebe71;
+
+  --vt-c-divider-dark-1: #f8fbf6;
+  --vt-c-divider-dark-2: #c1c6be;
+
+  --vt-c-text-dark-1: #f8fbf6;
+  --vt-c-text-dark-2: #c1c6be;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+
+  --color-title: #5f7a99;
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-label: #5f7a99;
+  --color-link: #f5f8f6;
+  --color-text: var(--vt-c-text-dark-2);
+  --section-gap: 160px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4 {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+}
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+
